@@ -59,6 +59,49 @@ section{
     font-size:40px;
     padding: 25px 0px;
 }
+.section .h3 .new{
+   position:absolute;
+   opacity: 0;
+   left: 38%;
+   animation-name: slidetwo;
+   animation-duration: 1.5s;
+   animation-delay: 1.5s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   color: #F69A74;
+}
+.section .h3 .h{
+   animation: slideone 1.5s 0.9s ease forwards infinite;
+   color: #F69A74;
+}
+@keyframes slideone{
+   0%{
+      transform: translateY(-50%);
+      opacity: 0;
+   }
+   60%{
+      transform: translateY(0%);
+      opacity: 1;
+   }
+    100%{
+      transform: translateY(2%);
+      opacity: 0;
+   } 
+} 
+@keyframes slidetwo{
+   0%{
+      transform: translateY(50%);
+      opacity: 0;
+   }
+   60%{
+      transform: translateY(-2%);
+      opacity: 1;
+   }
+   100%{
+      transform: translateY(0%);
+      opacity: 0;
+   }
+}
 .section p{
     max-width: 40%;
     line-height: 30px;
@@ -291,6 +334,9 @@ section .img3{
       display: flex;
       justify-content: space-between;
   }
+  .section .h3 .new{
+   left: 41%;
+}
    .section .h3{
       font-size: 35px;
    }
@@ -364,6 +410,9 @@ section{
 .section .h3{
    font-size: 25px;
 }
+.section .h3 .new{
+   left: 32%;
+}
 .section p{
    max-width: 50%;
    line-height: 30px;
@@ -423,6 +472,9 @@ button{
    body{
       overflow-x:hidden;
    }
+   .section .h3 .new{
+      left: 42%;
+   }
    footer{
       font-size: 14px;
       width:100%;
@@ -459,7 +511,8 @@ button{
    }
    nav ul{
       flex-direction: column;
-      gap:20px
+      gap:20px;
+      
    }
    .contact a{
       padding: 8px 13px;
