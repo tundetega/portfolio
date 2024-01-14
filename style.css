@@ -63,20 +63,20 @@ section{
    position:absolute;
    opacity: 0;
    left: 38%;
-   animation-name: slidetwo;
-   animation-duration: 1.5s;
-   animation-delay: 1.5s;
-   animation-fill-mode: forwards;
-   animation-iteration-count: infinite;
+    animation-name: slideTwo;
+   animation-duration: 2.5s;
+   animation-delay:300ms;
+   animation-fill-mode: backwards;
+   animation-iteration-count: infinite; 
    color: #F69A74;
 }
 .section .h3 .h{
-   animation: slideone 1.5s 0.9s ease forwards infinite;
+   animation: slideOne 2.5s ease 1.5s  backwards infinite; 
    color: #F69A74;
 }
-@keyframes slideone{
+@keyframes slideOne{
    0%{
-      transform: translateY(-50%);
+      transform: translateY(-70%);
       opacity: 0;
    }
    60%{
@@ -84,21 +84,21 @@ section{
       opacity: 1;
    }
     100%{
-      transform: translateY(2%);
+      transform: translateY(-70%);
       opacity: 0;
    } 
 } 
-@keyframes slidetwo{
+@keyframes slideTwo{
    0%{
-      transform: translateY(50%);
+      transform: translateY(70%);
       opacity: 0;
    }
    60%{
-      transform: translateY(-2%);
+      transform: translateY(0%);
       opacity: 1;
    }
    100%{
-      transform: translateY(0%);
+      transform: translateY(70%);
       opacity: 0;
    }
 }
