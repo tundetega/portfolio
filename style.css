@@ -1,0 +1,101 @@
+
+body{
+    background: #1A202C;
+    font-family: 'Courier', monospace;
+    color:white;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    padding: 5px;
+    border: none;
+    transition: all 400ms;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+li:hover{
+    color:#68D391;
+}
+main.main{
+    height: 90%;
+}
+nav img{
+height: 30px;
+}
+main .con {
+    width: 60%;
+}
+main h1{
+    color:#C6F6D5;
+}
+button{
+    border: 2px solid #68D391 !important;
+    color : #68D391 !important;
+}
+span{
+    color: #68D391;
+}
+body > main > div > button > i.fa-solid{
+  animation: move 500ms ease backwards infinite ;
+}
+.contact{
+    color:#C6F6D5;
+    border: 2px solid #C6F6D5;
+    padding:5px;
+}
+@keyframes move{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(5px);
+    }
+}
+@media screen and (max-width:992px){
+    nav{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background: #1a202c;
+    }
+    nav .ul {
+        display: none !important;
+    }
+    div.my-image{
+        width:50% !important;
+    }
+    main{
+        margin-top: 50px;
+    }
+    main .con{
+        width:95%;
+    }
+    .fa-solid.fa-bars{
+        display: block !important;
+        text-indent: -200;
+        cursor: pointer;
+        font-size: 18px;
+        transition: opacity 600ms ease;
+    }
+    .fa-solid.fa-circle-xmark{
+        transition: all 500ms ease;
+        color:red;
+    }
+    nav .menu{
+        display: block !important;
+        position: absolute;
+        bottom: -250px;
+        transition:all 900ms ease 200ms;
+        background:  #1a202c;
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    .menu ul li{
+        padding: 15px 0px;
+    }
+}

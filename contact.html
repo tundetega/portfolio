@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/tegs.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e4e1637bf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tega.com</title>
+    <style>
+        .fa-brands.fa-square-github{
+            text-indent:300px;
+            cursor: pointer;
+        } 
+        .fa-brands.fa-square-github:hover{
+            color:#C6F6D5;
+        }
+        .fa-brands.fa-square-x-twitter{
+            text-indent:300px;
+            cursor: pointer;
+        }
+        .fa-brands.fa-square-x-twitter:hover{
+            color:#C6F6D5;
+        }
+        .fa-solid.fa-envelope{
+            text-indent:320px; 
+        }
+        .anim{
+            animation: move 900ms ease infinite
+        }
+        .ani{
+            animation: move 900ms 200ms ease infinite 
+        }
+        @keyframes move{
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity:0;
+            }
+        }
+        @media screen and (max-width:700px){
+            .fa-brands.fa-square-github{
+            text-indent:100px;
+        } 
+        .fa-brands.fa-square-x-twitter{
+            text-indent:100px;
+        }
+        .fa-solid.fa-envelope{
+            text-indent:120px; 
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav class=" d-flex justify-content-between pt-3 px-2 align-items-center">
+        <div class="my-image w-25 text-center">
+            <img src="images/tega pix.jpg" alt="" width="30px" class="image-fluid rounded-circle">
+           <span>Tunde Tega</span> 
+        </div>
+        <ul class="ul w-50 d-flex justify-content-around">
+            <li><a href="" >01. About</a></li>
+            <li><a href="" >02. Skills</a></li>
+            <li><a href="">03. Projects</a></li>
+            <li><a href="" class="contact rounded">04. Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars d-none" id="bars"></i>
+       
+        <div class="menu w-75 d-none rounded" id="menu">
+            <i class="fa-solid fa-circle-xmark fa-2x" id="xmark"></i>
+            <ul class="ul-two text-center">
+                <li><a href="" >01. About</a></li>
+                <li><a href="" >02. Skills</a></li>
+                <li><a href="projects.html" class="contact rounded">03. Projects</a></li>
+                <li><a href="contact.html">04. Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main d-flex align-items-center">
+        <div class=" con container-fluid">
+            <h1><span>Contact me<span class="anim">.</span><span class="ani">.</span></span></h1>
+        <div class="twitter">
+            <a href="https://twitter.com/Datboi_tega" target="_blank"> <i class="fa-brands fa-square-x-twitter fa-3x "></i></a>
+        </div>  
+         <div class="github">
+            <a href="https://github.com/tundetega" target="_blank"><i class="fa-brands fa-square-github fa-3x"></i></a>
+        </div>
+         <div class="email my-2">
+            <i class="fa-solid fa-envelope"></i>: 
+            <span>olanrewajutega@gmail.com</span>
+        </div>
+        </div>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

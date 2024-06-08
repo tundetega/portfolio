@@ -1,0 +1,28 @@
+body{
+    overflow-x: hidden;
+}
+main .con{
+width: 80% !important;
+}
+.fa-solid.fa-arrow-right{
+font-size: 20px;
+text-indent: -30px;
+animation: move 500ms ease backwards infinite ;
+}
+p{
+color: #C6F6D5 !important;
+}
+@keyframes move{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(5px);
+    }
+}
+@media screen and (max-width:576px){
+    main.main{
+        height: 60%;
+        margin-top: 250px;
+    }
+}
